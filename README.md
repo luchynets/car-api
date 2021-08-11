@@ -60,6 +60,7 @@ Routes: <br/>
         + gender - (Gender of the owner) (Type: String) <br/>
         + last_name - (Surname of the owner) (Type: String) <br/>
       + total_count - (How many owners were found) (Type: Int) <br/>
+ <br/>
 If nothing could be found: <br/>
     + Body - {'detail': 'not found'}, status_code - 404 <br/>
 If you missed one of the options: <br/>
