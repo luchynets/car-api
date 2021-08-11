@@ -1,16 +1,16 @@
 # Car-api
 
 Routes: <br/>
-For create owner -POST: "/owner", Arguments: first_name (Owner name) (Type: String), last_name (Owner surname) (Type: String), birth_date (Owner birth date in format (day.month.year)) (Type: String), gender (Owner gender (male/female)) (Type: String)
+**For create owner** -POST: "/owner", Arguments: first_name (Owner name) (Type: String), last_name (Owner surname) (Type: String), birth_date (Owner birth date in format (day.month.year)) (Type: String), gender (Owner gender (male/female)) (Type: String)
 
-For add car for owner -POST: "/car", Arguments: brand (Car brand) (Type: String), model (Car model) (Type: String), owner (Car owner (Name and surname)) (Type: String), color (Car color) (Type: String), fuel_type (Car fuel type (gasoline/gas/diesel/electricity)) (Type: String), new_or_used (If the car is new, set it to True, otherwise if it is used, set it to False) (Type: Boolean)
-Note: if such an owner does not exist, an error will be returned
+**For add car for owner** -POST: "/car", Arguments: brand (Car brand) (Type: String), model (Car model) (Type: String), owner (Car owner (Name and surname)) (Type: String), color (Car color) (Type: String), fuel_type (Car fuel type (gasoline/gas/diesel/electricity)) (Type: String), new_or_used (If the car is new, set it to True, otherwise if it is used, set it to False) (Type: Boolean)
+*Note: if such an owner does not exist, an error will be returned*
 
-For get owner information -GET: "/owner", Arguments: search (Onwer name or surname) (Type: String), include_cars (Include cars or no(True/False)) (Type: Boolean), limit(Limit of owners count) (Type: Int) (Not necessarily), offset (How many owners to miss) (Type: Int) (Not necessarily)
+**For get owner information** -GET: "/owner", Arguments: search (Onwer name or surname) (Type: String), include_cars (Include cars or no(True/False)) (Type: Boolean), limit(Limit of owners count) (Type: Int) (Not necessarily), offset (How many owners to miss) (Type: Int) (Not necessarily)
 
 
-Examples: <br/>
-1. Add new owner: <br/>
+**Examples:** <br/>
+1. **Add new owner:** <br/>
   -POST: "/owner" (data = {'first_name': 'John', 'last_name': 'Doe', 'birth_date': '19.05.1999', 'gender': 'male}) <br/>
   Answers: <br/>
   If owner created successfully: <br/>
@@ -18,7 +18,7 @@ Examples: <br/>
   If you missed one of the options: <br/>
     Body - {'detail': 'You do not pass one of this constants (first_name/last_name/birth_date/gender)'}, status_code - 400 <br/>
 
-2. Add new car: <br/>
+2. **Add new car:** <br/>
   -POST "/car" (data = {'brand': 'Volkswagen', 'model': 'Golf SportWagen 1.4T SE', 'owner': 'John Doe', 'color': 'Silver', 'fuel_type': 'gas', 'new_or_used': False} <br/>
   If car added successfully: <br/>
     Body - {'detail': 'car added'}, status_code - 201 <br/>
@@ -27,7 +27,7 @@ Examples: <br/>
   If such an owner does not exist: <br/>
     Body - {'detail': f'that owner (John Doe) was not created'}, status_code - 400 <br/>
     
-3. Get owner information: <br/>
+3. **Get owner information:** <br/>
   -GET "/owner?search=Doe&include_cars=True" <br/>
   If request was successfully: <br/>
     Body - {"result": [{ <br/>
