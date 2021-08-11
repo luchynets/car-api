@@ -28,9 +28,9 @@ Examples:
     Body - {'detail': f'that owner (John Doe) was not created'}, status_code - 400
     
 3. Get owner information:
-  -GET "/owner?search=Doe&include_cars=True" \n
-  If request was successfully:
-    Body - {"result": [{
+ >-GET "/owner?search=Doe&include_cars=True" \n
+ >If request was successfully:
+ >>>Body - {"result": [{
                 "age": 22, 
                 "cars": [{
                   "brand": "Volkswagen", 
