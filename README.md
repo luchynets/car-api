@@ -17,16 +17,16 @@ Routes: <br/>
    If owner created successfully: 
    <ul>Body - {'detail': 'owner created'}, status_code - 201</ul> 
    If you missed one of the options: <br/>
-   <ul>Body - {'detail': 'You do not pass one of this constants (first_name/last_name/birth_date/gender)'}, status_code - 400</ul> <br/>
+   <ul>Body - {'detail': 'You do not pass one of this constants (first_name/last_name/birth_date/gender)'}, status_code - 400</ul> 
 
 2. **Add new car:** <br/>
   -POST "/car" (data = {'brand': 'Volkswagen', 'model': 'Golf SportWagen 1.4T SE', 'owner': 'John Doe', 'color': 'Silver', 'fuel_type': 'gas', 'new_or_used': False} <br/>
   If car added successfully: <br/>
-    + Body - {'detail': 'car added'}, status_code - 201 <br/>
+  <ul>Body - {'detail': 'car added'}, status_code - 201</ul> 
   If you missed one of the options: <br/>
-    + Body - {'detail': 'You do not pass one of this constants (brand/model/owner/color/fuel_type/new_or_used)'}, status_code - 400 <br/>
+  <ul>Body - {'detail': 'You do not pass one of this constants (brand/model/owner/color/fuel_type/new_or_used)'}, status_code - 400</ul>
   If such an owner does not exist: <br/>
-    + Body - {'detail': f'that owner (John Doe) was not created'}, status_code - 400 <br/>
+  <ul>Body - {'detail': f'that owner (John Doe) was not created'}, status_code - 400</ul>
     
 3. **Get owner information:** <br/>
   -GET "/owner?search=Doe&include_cars=True" <br/>
