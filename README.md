@@ -28,8 +28,8 @@ Examples:
     Body - {'detail': f'that owner (John Doe) was not created'}, status_code - 400
     
 3. Get owner information:
- >-GET "/owner?search=Doe&include_cars=True" \n
- >If request was successfully:
+ >-GET "/owner?search=Doe&include_cars=True" 
+ >>If request was successfully:
  >>>Body - {"result": [{
                 "age": 22, 
                 "cars": [{
@@ -45,13 +45,13 @@ Examples:
                 "last_name": "Doe"
             }], 
             "total_count": 1},
-    status_code - 200 
-    Variables:
-      restult - (All owners on request) (Type: List)
-        age - (Age of the owner) (Type: Int)
-        cars - (All car owners) (Type: List):
-          brand - (Car brand) (Type: String)
-          color - (Car color) (Type: String)
+>>>status_code - 200 
+>>>Variables:
+>>>>>>restult - (All owners on request) (Type: List)
+>>>>>>>>age - (Age of the owner) (Type: Int)
+>>>>>>>>cars - (All car owners) (Type: List):
+>>>>>>>>>>brand - (Car brand) (Type: String)
+>>>>>>>>>>color - (Car color) (Type: String)
           fuel_type - (Car fuel type) (Type: String)
           model - (Car model) (Type: String)
           new - (Car condition) (Type: String)
