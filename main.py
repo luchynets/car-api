@@ -59,5 +59,6 @@ def car():
 	except KeyError:
 		return jsonify({'detail': 'You do not pass one of this constants (brand/model/owner/color/fuel_type/new_or_used)'}), 400 #return error
 
+#run app
 if __name__ == '__main__':
 	app.run(debug = True)
