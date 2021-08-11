@@ -8,6 +8,7 @@ Routes: <br/>
 
 **For get owner information** -GET: "/owner", Arguments: search (Onwer name or surname) (Type: String), include_cars (Include cars or no(True/False)) (Type: Boolean), limit(Limit of owners count) (Type: Int) (Not necessarily), offset (How many owners to miss) (Type: Int) (Not necessarily)
 
+<hr/>
 
 **Examples:** <br/>
 1. **Add new owner:** <br/>
