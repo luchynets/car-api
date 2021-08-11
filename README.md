@@ -15,9 +15,9 @@ Routes: <br/>
   -POST: "/owner" (data = {'first_name': 'John', 'last_name': 'Doe', 'birth_date': '19.05.1999', 'gender': 'male}) <br/>
   Answers: <br/>
   If owner created successfully: <br/>
-    Body - {'detail': 'owner created'}, status_code - 201 <br/>
+    -Body - {'detail': 'owner created'}, status_code - 201 <br/>
   If you missed one of the options: <br/>
-    Body - {'detail': 'You do not pass one of this constants (first_name/last_name/birth_date/gender)'}, status_code - 400 <br/>
+    -Body - {'detail': 'You do not pass one of this constants (first_name/last_name/birth_date/gender)'}, status_code - 400 <br/>
 
 2. **Add new car:** <br/>
   -POST "/car" (data = {'brand': 'Volkswagen', 'model': 'Golf SportWagen 1.4T SE', 'owner': 'John Doe', 'color': 'Silver', 'fuel_type': 'gas', 'new_or_used': False} <br/>
