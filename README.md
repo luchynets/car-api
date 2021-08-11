@@ -63,9 +63,9 @@ Routes: <br/>
       + total_count - (How many owners were found) (Type: Int) <br/>
  <br/>
   If nothing could be found: <br/>
-  <ul>Body - {'detail': 'not found'}, status_code - 404</ul> <br/>
+  <ul>Body - {'detail': 'not found'}, status_code - 404</ul> 
   If you missed one of the options: <br/>
-  <ul>Body - {'detail': 'You do not pass one of this constants (search/include_cars)'}, status_code - 400</ul> <br/>
+  <ul>Body - {'detail': 'You do not pass one of this constants (search/include_cars)'}, status_code - 400</ul> 
 <br/>
 <br/>
 Enjoy using our api
