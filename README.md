@@ -31,6 +31,7 @@ Routes: <br/>
     
 3. **Get owner information:** <br/>
   -GET "/owner?search=Doe&include_cars=True" <br/>
+  Answers: <br/>
   If request was successfully: <br/>
     + Body - {"result": [{ <br/>
                 "age": 22, <br/>
